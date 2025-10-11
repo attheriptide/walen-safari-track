@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Shield, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
+import logo from "@/assets/walen-logo.jpg";
 
 const Hero = () => {
   return (
@@ -17,6 +18,15 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src={logo} 
+              alt="Walen Tracking Solutions Uganda" 
+              className="h-24 md:h-32 w-auto animate-fade-in"
+            />
+          </div>
+          
           <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm px-4 py-2 rounded-full border border-secondary/30 mb-4">
             <Shield className="w-4 h-4 text-secondary" />
             <span className="text-sm font-medium text-white">Trusted by 500+ Ugandan Drivers</span>
@@ -36,7 +46,7 @@ const Hero = () => {
               variant="hero" 
               size="xl"
               className="w-full sm:w-auto animate-pulse-glow"
-              onClick={() => window.open('https://wa.me/256YOUR_NUMBER?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
+              onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
             >
               <MapPin className="w-5 h-5" />
               Track My Vehicle Now

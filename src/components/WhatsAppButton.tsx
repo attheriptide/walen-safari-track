@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
         variant="accent"
         size="lg"
         className="rounded-full w-16 h-16 shadow-2xl animate-pulse-glow"
-        onClick={() => window.open('https://wa.me/256YOUR_NUMBER?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
+        onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
       >
         <MessageCircle className="w-7 h-7" />
       </Button>

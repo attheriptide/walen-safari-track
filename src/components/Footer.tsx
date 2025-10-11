@@ -1,4 +1,6 @@
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -12,14 +14,29 @@ const Footer = () => {
               Uganda's trusted GPS vehicle tracking and fleet management solution.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors">
+              <a 
+                href="https://www.facebook.com/WalenTrackingSolutions" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors">
-                <Twitter className="w-5 h-5" />
+              <a 
+                href="https://twitter.com/WalenTrackingSolutions" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors"
+              >
+                <FaXTwitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a 
+                href="https://www.tiktok.com/@walentrackingsolutions_ug" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-secondary/10 hover:bg-secondary flex items-center justify-center transition-colors"
+              >
+                <SiTiktok className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -56,7 +73,10 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0 text-secondary" />
-                <span className="text-background/70">+256 XXX XXX XXX</span>
+                <div className="text-background/70 space-y-1">
+                  <div>0778711847</div>
+                  <div>0754135470</div>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0 text-secondary" />
