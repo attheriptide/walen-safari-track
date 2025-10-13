@@ -1,4 +1,4 @@
-import { Car, Building2, Bike, Store, Users } from "lucide-react";
+import { Car, Building2, Bike, Store, Users, ChevronRight } from "lucide-react";
 
 const audiences = [
   {
