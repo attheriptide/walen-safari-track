@@ -7,10 +7,10 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Products", href: "#services" },
-    { label: "Solutions", href: "#audience" },
-    { label: "Resources", href: "#faq" },
-    { label: "Safety Tips", href: "#safety" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Solutions", href: "/solutions" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -18,14 +18,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <img 
               src={logo} 
               alt="Walen Tracking Solutions" 
               className="h-10 w-auto"
             />
             <span className="font-bold text-lg text-foreground hidden sm:inline">Walen</span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
