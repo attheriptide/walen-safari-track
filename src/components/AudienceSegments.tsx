@@ -1,6 +1,6 @@
 import { Car, Building2, Bike, Store, Users } from "lucide-react";
 
-const segments = [
+const audiences = [
   {
     icon: Car,
     label: "Car Owners",
@@ -35,35 +35,51 @@ const segments = [
 
 const AudienceSegments = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="audience" className="py-32 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Who We Serve
+        <div className="text-center mb-20 space-y-4">
+          <h2 className="text-sm font-semibold text-success uppercase tracking-wider">
+            SOLUTIONS FOR EVERYONE
           </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-foreground max-w-3xl mx-auto">
+            Who We Serve
+          </h3>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Trusted by drivers, businesses, and riders across Uganda
+            Tailored tracking solutions for every type of vehicle owner in Uganda
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {segments.map((segment, index) => (
+        <div className="max-w-5xl mx-auto space-y-6">
+          {audiences.map((audience, index) => (
             <div 
               key={index}
-              className="group text-center p-8 rounded-xl bg-gradient-to-br from-card to-background border border-border hover:border-secondary/50 transition-all duration-500 hover:shadow-[var(--shadow-card)] hover:-translate-y-2 space-y-4"
+              className="group p-8 md:p-10 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-[var(--shadow-elegant)] cursor-pointer"
             >
-              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                <segment.icon className="w-8 h-8 text-secondary group-hover:text-secondary-foreground transition-colors" />
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <audience.icon className="w-8 h-8 text-primary" />
+                  </div>
+                </div>
+                
+                <div className="flex-1 space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground">
+                    {audience.label}
+                  </h3>
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    {audience.message}
+                  </p>
+                  <div className="pt-2">
+                    <p className="text-sm text-muted-foreground italic">
+                      {audience.subtext}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex-shrink-0 self-center md:self-start md:pt-4">
+                  <ChevronRight className="w-6 h-6 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-secondary group-hover:scale-105 transition-transform">
-                {segment.label}
-              </h3>
-              <p className="text-foreground text-lg leading-relaxed">
-                {segment.message}
-              </p>
-              <p className="text-sm text-muted-foreground italic pt-2 border-t border-border/50">
-                {segment.subtext}
-              </p>
             </div>
           ))}
         </div>

@@ -72,36 +72,41 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="services" className="py-32 bg-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Our Services
+        <div className="text-center mb-20 space-y-4">
+          <h2 className="text-sm font-semibold text-secondary uppercase tracking-wider">
+            PRODUCTS & SERVICES
           </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-foreground max-w-3xl mx-auto">
+            Everything you need to protect and manage your vehicles
+          </h3>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive vehicle tracking and safety solutions tailored for Uganda
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="group border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-[var(--shadow-card)] bg-card overflow-hidden"
+              className="group border-border hover:border-primary/30 transition-all duration-300 hover:shadow-[var(--shadow-elegant)] bg-gradient-to-b from-card to-card/50 overflow-hidden"
             >
-              <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <service.icon className="w-6 h-6 text-secondary" />
+              <CardHeader className="space-y-4">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary/20 to-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <service.icon className="w-7 h-7 text-secondary" />
                 </div>
-                <CardTitle className="text-xl">{service.name}</CardTitle>
+                <CardTitle className="text-xl font-bold">{service.name}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <CardDescription className="text-base">
+              <CardContent className="space-y-4">
+                <CardDescription className="text-base text-muted-foreground leading-relaxed">
                   {service.description}
                 </CardDescription>
-                <p className="text-sm text-muted-foreground italic border-l-2 border-secondary/30 pl-3">
-                  {service.subtext}
-                </p>
+                <div className="pt-3 border-t border-border/50">
+                  <p className="text-sm text-muted-foreground/80 italic">
+                    {service.subtext}
+                  </p>
+                </div>
               </CardContent>
             </Card>
           ))}

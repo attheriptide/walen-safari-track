@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ScrollStory from "@/components/ScrollStory";
 import Benefits from "@/components/Benefits";
@@ -13,6 +14,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       <Hero />
       <ScrollStory />
       <Benefits />

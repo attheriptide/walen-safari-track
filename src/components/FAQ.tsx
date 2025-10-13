@@ -92,34 +92,41 @@ const faqCategories = [
 
 const FAQ = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="faq" className="py-32 bg-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Frequently Asked Questions
+        <div className="text-center mb-20 space-y-4">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider">
+            SUPPORT & RESOURCES
           </h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-foreground max-w-3xl mx-auto">
+            Frequently Asked Questions
+          </h3>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about GPS vehicle tracking in Uganda
+            Everything you need to know about GPS tracking in Uganda
           </p>
         </div>
-        
-        <div className="max-w-4xl mx-auto space-y-8">
+
+        <div className="max-w-5xl mx-auto space-y-12">
           {faqCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="space-y-4">
-              <h3 className="text-2xl font-bold text-foreground border-l-4 border-secondary pl-4">
-                {category.category}
-              </h3>
-              <Accordion type="single" collapsible className="space-y-2">
+            <div key={categoryIndex} className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="h-1 w-12 bg-gradient-to-r from-primary to-secondary rounded-full" />
+                <h3 className="text-2xl font-bold text-foreground">
+                  {category.category}
+                </h3>
+              </div>
+              
+              <Accordion type="single" collapsible className="space-y-4">
                 {category.questions.map((item, index) => (
                   <AccordionItem 
                     key={index} 
                     value={`${categoryIndex}-${index}`}
-                    className="border border-border rounded-lg px-6 bg-card hover:border-secondary/50 transition-colors"
+                    className="border border-border rounded-xl px-8 bg-card hover:border-primary/30 transition-all hover:shadow-[var(--shadow-card)]"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                    <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-primary hover:no-underline py-6">
                       {item.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                    <AccordionContent className="text-muted-foreground leading-relaxed pb-6 text-base">
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>
