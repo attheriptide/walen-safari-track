@@ -88,13 +88,13 @@ const Solutions = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 via-background to-primary/5">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-            Solutions for Every Vehicle Owner
+            Our Solutions
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you own one car or a hundred vehicles, we have a solution designed specifically for your needs
+            Whether you're managing a small delivery team, a long-haul fleet, or a personal car, Walen Safari Track offers flexible solutions that fit your needs
           </p>
         </div>
       </section>

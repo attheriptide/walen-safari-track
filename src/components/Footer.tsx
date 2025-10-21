@@ -1,6 +1,4 @@
-import { MapPin, Phone, Mail, Facebook } from "lucide-react";
-import { SiTiktok } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
+import { MapPin, Phone, Mail, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,34 +7,37 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-foreground">Walen Tracking</h3>
+            <h3 className="text-2xl font-bold text-foreground">Walen Safari Track</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Uganda's trusted GPS vehicle tracking and fleet management solution.
+              Smart Tracking for Uganda's Roads
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://www.facebook.com/WalenTrackingSolutions" 
+                href="https://facebook.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-muted hover:bg-primary flex items-center justify-center transition-colors group"
+                className="w-10 h-10 rounded-lg bg-secondary/20 hover:bg-primary flex items-center justify-center transition-colors group"
+                aria-label="Facebook"
               >
-                <Facebook className="w-5 h-5 text-muted-foreground group-hover:text-white transition-colors" />
+                <Facebook className="w-5 h-5 text-foreground group-hover:text-primary-foreground transition-colors" />
               </a>
               <a 
-                href="https://twitter.com/WalenTrackingSolutions" 
+                href="https://instagram.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-muted hover:bg-primary flex items-center justify-center transition-colors group"
+                className="w-10 h-10 rounded-lg bg-secondary/20 hover:bg-primary flex items-center justify-center transition-colors group"
+                aria-label="Instagram"
               >
-                <FaXTwitter className="w-5 h-5 text-muted-foreground group-hover:text-white transition-colors" />
+                <Instagram className="w-5 h-5 text-foreground group-hover:text-primary-foreground transition-colors" />
               </a>
               <a 
-                href="https://www.tiktok.com/@walentrackingsolutions_ug" 
+                href="https://wa.me/256778711847" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-muted hover:bg-primary flex items-center justify-center transition-colors group"
+                className="w-10 h-10 rounded-lg bg-secondary/20 hover:bg-primary flex items-center justify-center transition-colors group"
+                aria-label="WhatsApp"
               >
-                <SiTiktok className="w-4 h-4 text-muted-foreground group-hover:text-white transition-colors" />
+                <MessageCircle className="w-5 h-5 text-foreground group-hover:text-primary-foreground transition-colors" />
               </a>
             </div>
           </div>
@@ -45,10 +46,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-6 text-foreground text-lg">Quick Links</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#audience" className="text-muted-foreground hover:text-primary transition-colors">Solutions</a></li>
-              <li><a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#safety" className="text-muted-foreground hover:text-primary transition-colors">Safety Tips</a></li>
+              <li><a href="/" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
+              <li><a href="/about" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
+              <li><a href="/services" className="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
+              <li><a href="/solutions" className="text-muted-foreground hover:text-primary transition-colors">Solutions</a></li>
+              <li><a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
           
@@ -88,7 +90,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 Walen Tracking Solutions Uganda. All rights reserved.
+            © {new Date().getFullYear()} Walen Safari Track. All rights reserved.
           </p>
         </div>
       </div>

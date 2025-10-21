@@ -9,14 +9,14 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 via-background to-primary/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-              About Walen Tracking Solutions
+              About Walen Safari Track
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Uganda's trusted partner in vehicle security and fleet intelligence
+              Smart Tracking for Uganda's Roads
             </p>
           </div>
         </div>
@@ -32,13 +32,16 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  At Walen Safari Track, we believe every vehicle tells a story — where it's been, how it's used, and how it keeps your business moving. Yet too many companies in Uganda lose time and money because they can't see what's happening on the road. From unexpected breakdowns to fuel loss and driver misuse, small inefficiencies can turn into big costs.
+                  At Walen Safari Track, we believe every vehicle tells a story — where it's been, how it's used, and how it keeps your business moving. Yet too many companies in Uganda lose time and money because they can't see what's happening on the road.
                 </p>
                 <p>
-                  That's the problem we set out to solve.
+                  From unexpected breakdowns to fuel loss and driver misuse, small inefficiencies can turn into big costs. That's the problem we set out to solve.
                 </p>
                 <p>
-                  Our journey began with one goal — to bring smarter, simpler, and more affordable vehicle tracking to Uganda. We combine GPS technology, IoT telematics, and real-time analytics to help individuals and businesses monitor their vehicles anytime, anywhere. Whether you manage a few cars or an entire fleet, our platform gives you complete visibility, so you can reduce losses, improve safety, and make confident decisions every day.
+                  Our journey began with one goal — to bring smarter, simpler, and more affordable vehicle tracking to Uganda. We combine GPS technology, IoT telematics, and real-time analytics to help individuals and businesses monitor their vehicles anytime, anywhere.
+                </p>
+                <p>
+                  Whether you manage a few cars or an entire fleet, our platform gives you complete visibility, so you can reduce losses, improve safety, and make confident decisions every day.
                 </p>
                 <p>
                   What makes us different is our local expertise and reliability. We don't just sell tracking devices — we offer ongoing support, setup, and guidance tailored to Ugandan roads and realities. Our mission is to make smart tracking accessible to every driver and business, building a future where mobility is safer, more efficient, and fully connected.
@@ -72,7 +75,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -81,7 +84,7 @@ const About = () => {
               </div>
               <h2 className="text-3xl font-bold mb-4 text-foreground">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To protect every vehicle in Uganda with reliable, affordable GPS tracking technology—empowering car owners, fleet managers, and boda riders with real-time visibility, control, and peace of mind. We exist to turn vehicle insecurity into confidence and confusion into clarity.
+                To make smart tracking accessible to every driver and business in Uganda, building a future where mobility is safer, more efficient, and fully connected.
               </p>
             </div>
 
@@ -91,7 +94,7 @@ const About = () => {
               </div>
               <h2 className="text-3xl font-bold mb-4 text-foreground">Our Vision</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To become East Africa's most trusted vehicle security partner—where every driver knows their vehicle is safe, every business runs efficiently, and vehicle theft becomes a thing of the past. We envision a future where tracking technology is standard, not optional.
+                To become Uganda's most trusted vehicle tracking partner — where every vehicle owner has complete visibility, control, and peace of mind.
               </p>
             </div>
           </div>

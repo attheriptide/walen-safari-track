@@ -30,15 +30,12 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-32 bg-muted/20">
+    <section id="faq" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20 space-y-4">
-          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider">
-            SUPPORT & RESOURCES
-          </h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
             Frequently Asked Questions
-          </h3>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Everything you need to know about GPS tracking in Uganda
           </p>
