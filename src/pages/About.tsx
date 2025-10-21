@@ -22,23 +22,26 @@ const About = () => {
         </div>
       </section>
 
-      {/* Who We Are */}
+      {/* Who We Are - Story */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Who We Are
+                Our Story
               </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Walen Tracking Solutions is Uganda's leading provider of GPS tracking and vehicle security systems. We specialize in real-time vehicle monitoring, fleet management, and theft prevention technologies designed specifically for Uganda's roads and business environment.
+                  At Walen Safari Track, we believe every vehicle tells a story — where it's been, how it's used, and how it keeps your business moving. Yet too many companies in Uganda lose time and money because they can't see what's happening on the road. From unexpected breakdowns to fuel loss and driver misuse, small inefficiencies can turn into big costs.
                 </p>
                 <p>
-                  Since our inception, we've protected thousands of vehicles across Uganda—from individual car owners in Kampala to large commercial fleets operating nationwide. We combine cutting-edge GPS technology with local expertise to deliver solutions that actually work in Ugandan conditions.
+                  That's the problem we set out to solve.
                 </p>
                 <p>
-                  Our team understands the unique challenges of vehicle ownership in Uganda: rising theft rates, unpredictable fuel costs, traffic congestion, and the need for accountability. That's why every solution we offer is tailored to address these real problems with practical, affordable technology.
+                  Our journey began with one goal — to bring smarter, simpler, and more affordable vehicle tracking to Uganda. We combine GPS technology, IoT telematics, and real-time analytics to help individuals and businesses monitor their vehicles anytime, anywhere. Whether you manage a few cars or an entire fleet, our platform gives you complete visibility, so you can reduce losses, improve safety, and make confident decisions every day.
+                </p>
+                <p>
+                  What makes us different is our local expertise and reliability. We don't just sell tracking devices — we offer ongoing support, setup, and guidance tailored to Ugandan roads and realities. Our mission is to make smart tracking accessible to every driver and business, building a future where mobility is safer, more efficient, and fully connected.
                 </p>
               </div>
             </div>

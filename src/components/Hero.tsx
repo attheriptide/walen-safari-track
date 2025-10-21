@@ -15,14 +15,12 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-              GPS tracking that makes your operations{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                safer and more efficient.
-              </span>
+              Smart Vehicle Tracking for
+              <span className="block text-primary mt-2">Uganda's Roads</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-xl">
-              One platform to help improve the <span className="text-foreground font-semibold">Safety</span>, <span className="text-foreground font-semibold">Productivity</span>, and <span className="text-foreground font-semibold">Profitability</span> of your vehicles in Uganda.
+            <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
+              We help individuals and businesses track, protect, and manage their vehicles with simple, reliable GPS technology — all from their phone.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">

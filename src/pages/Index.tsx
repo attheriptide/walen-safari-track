@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Benefits from "@/components/Benefits";
+import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -132,7 +133,8 @@ const Index = () => {
         </div>
       </section>
 
-      <Benefits />
+      <Services />
+      <WhyChooseUs />
       <Testimonials />
       <FAQ />
       <CTA />
