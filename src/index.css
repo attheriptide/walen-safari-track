@@ -9,30 +9,37 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 217 77% 16%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 217 77% 16%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 142 71% 45%;
+    --popover-foreground: 217 77% 16%;
+    --primary: 208 100% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 142 71% 45%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
+    --primary-dark: 217 77% 16%;
+    --primary-light: 210 60% 94%;
+    --secondary: 220 100% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 50% 97%;
+    --muted-foreground: 0 0% 23%;
+    --accent: 215 100% 86%;
+    --accent-foreground: 217 77% 16%;
+    --destructive: 0 100% 41%;
     --destructive-foreground: 0 0% 100%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 142 71% 45%;
+    --success: 175 63% 48%;
+    --success-foreground: 0 0% 100%;
+    --warning: 43 100% 51%;
+    --warning-foreground: 217 77% 16%;
+    --border: 210 60% 94%;
+    --input: 210 50% 97%;
+    --ring: 208 100% 45%;
     --radius: 0.75rem;
-    --chart-1: 142 71% 45%;
-    --chart-2: 160 84% 39%;
-    --chart-3: 173 80% 40%;
-    --chart-4: 188 78% 41%;
-    --chart-5: 198 82% 44%;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --chart-1: 208 100% 45%;
+    --chart-2: 220 100% 55%;
+    --chart-3: 215 100% 86%;
+    --chart-4: 175 63% 48%;
+    --chart-5: 43 100% 51%;
   }
 }
 
@@ -44,5 +51,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
   }
 }
