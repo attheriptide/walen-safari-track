@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Shield, Target, Eye, Award } from "lucide-react";
+import teamImg from "@/assets/about-team.jpg";
 
 const About = () => {
   return (
@@ -48,7 +49,14 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="space-y-6">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src={teamImg} 
+                  alt="Walen Tracking Solutions Uganda team working on GPS tracking technology in modern Kampala office"
+                  className="w-full h-auto"
+                />
+              </div>
               <div className="bg-card border border-border rounded-2xl p-8 shadow-xl">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">

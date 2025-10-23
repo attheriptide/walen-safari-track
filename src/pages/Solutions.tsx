@@ -3,6 +3,9 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Car, Building2, Bike, Store, Shield } from "lucide-react";
+import carOwnerImg from "@/assets/solution-car-owner.jpg";
+import businessFleetImg from "@/assets/solution-business-fleet.jpg";
+import bodaRiderImg from "@/assets/solution-boda-rider.jpg";
 
 const solutions = [
   {
@@ -10,6 +13,7 @@ const solutions = [
     label: "For Car Owners",
     title: "Protect Your Investment",
     description: "You worked hard for your car. Whether it's a family vehicle or your daily commute, we help you protect it with real-time tracking, theft alerts, and remote engine control.",
+    image: carOwnerImg,
     benefits: [
       "24/7 real-time location tracking",
       "Instant theft and tamper alerts",
@@ -25,6 +29,7 @@ const solutions = [
     label: "For Businesses & Fleets",
     title: "Run Smarter, Safer, More Efficiently",
     description: "Managing multiple vehicles is complex. We simplify it with one dashboard that tracks everything—routes, fuel, drivers, and maintenance.",
+    image: businessFleetImg,
     benefits: [
       "Monitor unlimited vehicles from one place",
       "Reduce fuel costs by up to 30%",
@@ -40,6 +45,7 @@ const solutions = [
     label: "For Boda Riders",
     title: "Your Bike, Your Livelihood, Protected",
     description: "Your motorcycle is how you earn. We help you track it, protect it from theft, and recover it fast if something happens.",
+    image: bodaRiderImg,
     benefits: [
       "Affordable tracking for bodas",
       "Instant theft alerts to your phone",
@@ -55,6 +61,7 @@ const solutions = [
     label: "For Dealerships",
     title: "Add Value to Every Sale",
     description: "Stand out from competitors by offering built-in GPS tracking with every vehicle sale. It's not just a product—it's peace of mind.",
+    image: carOwnerImg,
     benefits: [
       "Pre-install trackers before delivery",
       "Offer tracking as a premium package",
@@ -70,6 +77,7 @@ const solutions = [
     label: "For Everyone",
     title: "Vehicle Safety is a Right, Not a Luxury",
     description: "Whether you're a student, parent, entrepreneur, or retiree—if you own a vehicle in Uganda, Walen is here to protect it.",
+    image: businessFleetImg,
     benefits: [
       "Affordable plans for all budgets",
       "Simple installation and setup",
@@ -147,22 +155,31 @@ const Solutions = () => {
               </Card>
 
               <div className={index % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''}>
-                <div className="bg-muted/30 border border-border rounded-2xl p-8">
-                  <div className="mb-4">
-                    <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                    </svg>
-                  </div>
-                  <p className="text-lg text-foreground italic mb-4">
-                    "{solution.testimonial}"
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-3">
-                      <solution.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-foreground">Real Client</div>
-                      <div className="text-xs text-muted-foreground">{solution.label.replace('For ', '')}</div>
+                <div className="relative h-full min-h-[300px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={solution.image} 
+                    alt={`${solution.label} - GPS tracking solutions for ${solution.label.replace('For ', '').toLowerCase()} in Uganda`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent flex items-end p-8">
+                    <div className="w-full">
+                      <div className="mb-4">
+                        <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p className="text-lg text-foreground italic mb-4">
+                        "{solution.testimonial}"
+                      </p>
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                          <solution.icon className="h-5 w-5 text-primary" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-semibold text-foreground">Real Client</div>
+                          <div className="text-xs text-muted-foreground">{solution.label.replace('For ', '')}</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

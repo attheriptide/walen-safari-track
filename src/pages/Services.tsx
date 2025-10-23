@@ -6,12 +6,17 @@ import {
   Satellite, Users, Bell, MapPin, Route, History, 
   Power, Video, Fuel, Shield, AlertTriangle, CheckCircle 
 } from "lucide-react";
+import gpsTrackingImg from "@/assets/service-gps-tracking.jpg";
+import fleetManagementImg from "@/assets/service-fleet-management.jpg";
+import alertsImg from "@/assets/service-alerts.jpg";
+import infographicImg from "@/assets/infographic-how-it-works.jpg";
 
 const services = [
   {
     icon: Satellite,
     name: "Real-Time GPS Tracking",
     description: "Know exactly where your vehicles are at any moment. Our live maps update instantly, so you're always in control — right from your phone.",
+    image: gpsTrackingImg,
     features: [
       "Live location tracking on mobile and web",
       "Works even when vehicle is turned off",
@@ -23,6 +28,7 @@ const services = [
     icon: Users,
     name: "Fleet & Driver Management",
     description: "Monitor driver behavior, fuel usage, and maintenance schedules from one dashboard. Cut costs, reduce downtime, and improve efficiency.",
+    image: fleetManagementImg,
     features: [
       "Track driver performance and behavior",
       "Monitor fuel consumption in real-time",
@@ -34,6 +40,7 @@ const services = [
     icon: Power,
     name: "Remote Engine Control",
     description: "Lost a vehicle or facing theft? Instantly cut off the engine remotely and keep your assets safe — directly through your mobile app.",
+    image: infographicImg,
     features: [
       "Shut down engine from anywhere",
       "Secure authorization process",
@@ -45,6 +52,7 @@ const services = [
     icon: Bell,
     name: "Alerts & Reports",
     description: "Get instant alerts for speeding, route deviations, idling, and more. Stay informed and in charge 24/7.",
+    image: alertsImg,
     features: [
       "SMS and app notifications",
       "Customizable alert types",
@@ -78,8 +86,16 @@ const Services = () => {
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="bg-card border-border hover:shadow-xl transition-all duration-300"
+                className="bg-card border-border hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={`${service.name} - Professional GPS vehicle tracking service in Uganda`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
+                </div>
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
                     <service.icon className="h-8 w-8 text-primary" />
