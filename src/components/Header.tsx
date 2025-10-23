@@ -21,10 +21,10 @@ const Header = () => {
           <a href="/" className="flex items-center gap-2">
             <img 
               src={logo} 
-              alt="Walen Tracking Solutions" 
+              alt="Walen Tracking Solutions Uganda - GPS Vehicle Tracking" 
               className="h-10 w-auto"
             />
-            <span className="font-bold text-lg text-foreground hidden sm:inline">Walen</span>
+            <span className="font-bold text-lg text-foreground hidden sm:inline">Walen Tracking</span>
           </a>
 
           {/* Desktop Navigation */}

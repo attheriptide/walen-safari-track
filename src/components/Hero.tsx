@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroImage from "@/assets/hero-dashboard.jpg";
+import heroImage from "@/assets/tracking-dashboard.jpg";
 
 const Hero = () => {
   return (
@@ -51,10 +51,10 @@ const Hero = () => {
 
           {/* Right Visual */}
           <div className="relative animate-fade-in">
-            <div className="relative rounded-2xl overflow-hidden border-4 border-primary/20 shadow-[var(--shadow-premium)]">
+            <div className="relative rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
               <img 
                 src={heroImage} 
-                alt="GPS Tracking Dashboard showcasing real-time vehicle monitoring" 
+                alt="Real-time GPS vehicle tracking dashboard showing multiple vehicles on Kampala roads monitored via smartphone and laptop interface" 
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
@@ -78,7 +78,7 @@ const Hero = () => {
         {/* Trust Banner */}
         <div className="mt-20 pt-12 border-t border-border">
           <div className="bg-foreground/5 rounded-2xl p-6 text-center">
-            <p className="text-sm text-muted-foreground mb-4">Walen wins #1 for Best Vehicle Tracking & Fleet Management in Uganda</p>
+            <p className="text-sm text-muted-foreground mb-4">Walen Tracking Solutions Uganda - #1 for Best Vehicle Tracking & Fleet Management</p>
             <div className="flex flex-wrap items-center justify-center gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-foreground">24/7</div>
