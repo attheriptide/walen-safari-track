@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -111,12 +112,12 @@ const Index = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
                 >
                   Explore All Services
-                </a>
+                </Link>
               </div>
             </div>
             <div>

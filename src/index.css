@@ -67,6 +67,11 @@ All colors MUST be HSL.
     z-index: 1;
   }
 
+  /* Hover scale utility */
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
   /* Floating animations */
   @keyframes float1 {
     0%, 100% {
