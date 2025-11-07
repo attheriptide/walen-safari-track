@@ -33,11 +33,8 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-foreground">Call Us</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <a href="tel:+256778711847" className="block hover:text-primary transition-colors">
-                    0778 711 847
-                  </a>
-                  <a href="tel:+256754135470" className="block hover:text-primary transition-colors">
-                    0754 135 470
+                  <a href="tel:+256778478671" className="block hover:text-primary transition-colors">
+                    0778 478 671
                   </a>
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
@@ -53,7 +50,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-foreground">WhatsApp</h3>
                 <a 
-                  href="https://wa.me/256778711847"
+                  href="https://wa.me/256778478671"
                   className="inline-flex items-center justify-center h-12 px-6 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors mt-2"
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
@@ -174,8 +171,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Location</h3>
                         <p className="text-muted-foreground">
-                          Kampala, Uganda<br />
-                          <span className="text-sm">(Exact address shared upon appointment)</span>
+                          Rhino Camp Road, Arua, Uganda<br />
+                          <span className="text-sm">(Visit us or book an appointment)</span>
                         </p>
                       </div>
                     </div>
@@ -187,7 +184,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                         <p className="text-muted-foreground">
-                          <a href="tel:+256778711847" className="hover:text-primary transition-colors">0778 711 847</a><br />
+                          <a href="tel:+256778478671" className="hover:text-primary transition-colors">0778 478 671</a><br />
                           <a href="tel:+256754135470" className="hover:text-primary transition-colors">0754 135 470</a>
                         </p>
                       </div>
@@ -237,7 +234,7 @@ const Contact = () => {
                       <FaTiktok className="h-6 w-6" />
                     </a>
                     <a
-                      href="https://wa.me/256778711847"
+                      href="https://wa.me/256778478671"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"

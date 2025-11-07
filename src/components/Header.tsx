@@ -47,13 +47,13 @@ const Header = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.location.href = 'tel:+256778711847'}
+              onClick={() => window.location.href = 'tel:+256778478671'}
             >
               Contact
             </Button>
             <Button
               size="sm"
-              onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
+              onClick={() => window.open('https://wa.me/256778478671?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
             >
               Get started
             </Button>
@@ -88,7 +88,7 @@ const Header = () => {
                   size="sm"
                   className="w-full"
                   onClick={() => {
-                    window.location.href = 'tel:+256778711847';
+                    window.location.href = 'tel:+256778478671';
                     setMobileMenuOpen(false);
                   }}
                 >
@@ -98,7 +98,7 @@ const Header = () => {
                   size="sm"
                   className="w-full"
                   onClick={() => {
-                    window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank');
+                    window.open('https://wa.me/256778478671?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank');
                     setMobileMenuOpen(false);
                   }}
                 >

@@ -18,7 +18,7 @@ const CTA = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <a 
-              href="https://wa.me/256778711847"
+              href="https://wa.me/256778478671"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 h-12 text-lg bg-background text-foreground hover:bg-background/90 rounded-lg font-medium shadow-xl transition-colors"
             >
               Request a Demo

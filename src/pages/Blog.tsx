@@ -183,7 +183,7 @@ const Blog = () => {
             </p>
             <Button 
               size="lg"
-              onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20subscribe%20to%20your%20newsletter', '_blank')}
+              onClick={() => window.open('https://wa.me/256778478671?text=Hi!%20I%20want%20to%20subscribe%20to%20your%20newsletter', '_blank')}
             >
               Subscribe via WhatsApp
             </Button>

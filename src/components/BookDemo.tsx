@@ -77,7 +77,7 @@ const BookDemo = () => {
                     <Button
                       size="lg"
                       className="w-full bg-background text-foreground hover:bg-background/90 h-11 sm:h-12 text-sm sm:text-base"
-                      onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20book%20a%20demo%20of%20your%20GPS%20tracking%20system.', '_blank')}
+                      onClick={() => window.open('https://wa.me/256778478671?text=Hi!%20I%20want%20to%20book%20a%20demo%20of%20your%20GPS%20tracking%20system.', '_blank')}
                     >
                       <Phone className="w-4 h-4 mr-2" />
                       Schedule via WhatsApp
@@ -88,13 +88,13 @@ const BookDemo = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <a 
-                  href="tel:+256778711847"
+                  href="tel:+256778478671"
                   className="flex items-center justify-center gap-3 p-4 sm:p-6 bg-card border border-border rounded-xl hover:shadow-lg transition-all group"
                 >
                   <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform" />
                   <div className="text-left">
                     <div className="text-xs text-muted-foreground">Call us</div>
-                    <div className="text-sm sm:text-base font-semibold text-foreground">+256 778 711847</div>
+                    <div className="text-sm sm:text-base font-semibold text-foreground">0778 478 671</div>
                   </div>
                 </a>
 

@@ -31,7 +31,7 @@ const Hero = () => {
               <Button 
                 size="lg"
                 className="text-sm sm:text-base px-6 sm:px-8 h-11 sm:h-12 hover-scale w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/256778711847?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
+                onClick={() => window.open('https://wa.me/256778478671?text=Hi!%20I%20want%20to%20track%20my%20car.%20Can%20you%20help?', '_blank')}
               >
                 Get started
               </Button>

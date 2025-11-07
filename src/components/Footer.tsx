@@ -31,7 +31,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-foreground group-hover:text-primary-foreground transition-colors" />
               </a>
               <a 
-                href="https://wa.me/256778711847" 
+                href="https://wa.me/256778478671" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary/20 hover:bg-primary flex items-center justify-center transition-colors group"
@@ -71,13 +71,12 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">Kampala, Uganda</span>
+                <span className="text-muted-foreground">Rhino Camp Road, Arua, Uganda</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0 text-primary" />
                 <div className="text-muted-foreground space-y-1">
-                  <div>0778711847</div>
-                  <div>0754135470</div>
+                  <div>0778 478 671</div>
                 </div>
               </li>
               <li className="flex items-center gap-3">
