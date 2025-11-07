@@ -1,31 +1,22 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
-import testimonial1 from "@/assets/testimonial-businessman.jpg";
-import testimonial2 from "@/assets/testimonial-logistics.jpg";
-import testimonial3 from "@/assets/testimonial-driver.jpg";
+import { Star, User } from "lucide-react";
 
 const testimonials = [
   {
     name: "Grace Nakato",
     role: "Business Owner, Kampala",
-    image: testimonial1,
-    alt: "African businessman using GPS vehicle tracking app on smartphone in modern office setting in Uganda",
     quote: "Within 3 hours of my car being stolen, Walen helped me recover it using the remote cut-off feature. They saved my business!",
     rating: 5
   },
   {
     name: "David Okello",
     role: "Fleet Manager, UCMI Transport",
-    image: testimonial2,
-    alt: "Professional logistics manager reviewing fleet management data on tablet in warehouse facility in Kampala",
     quote: "We've reduced fuel costs by 30% and improved driver accountability. The dashboard makes managing 20+ vehicles so easy.",
     rating: 5
   },
   {
     name: "James Musoke",
     role: "Taxi Driver, Kampala",
-    image: testimonial3,
-    alt: "Happy Ugandan taxi driver standing confidently next to GPS-tracked vehicle in Kampala city streets",
     quote: "With Walen, my passengers trust me more. They can see I'm driving safely, and I've built a reputation for being reliable.",
     rating: 5
   }
@@ -52,11 +43,9 @@ const Testimonials = () => {
             >
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.alt}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-secondary"
-                  />
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+                    <User className="w-8 h-8 text-primary" />
+                  </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-lg text-foreground">
                       {testimonial.name}

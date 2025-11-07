@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Satellite, Users, Shield, CheckCircle } from "lucide-react";
+import fleetDashboard from "@/assets/fleet-dashboard.png";
 
 const Index = () => {
   return (
@@ -124,8 +125,8 @@ const Index = () => {
               <Card className="bg-card border-border shadow-xl">
                 <CardContent className="p-0">
                   <img 
-                    src="/assets/hero-dashboard.jpg" 
-                    alt="Walen GPS Tracking Dashboard"
+                    src={fleetDashboard} 
+                    alt="Walen GPS fleet management dashboard showing real-time vehicle tracking with asset list, location monitoring, and interactive map interface for Ugandan transport companies"
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </CardContent>
